@@ -1,0 +1,94 @@
+### API - 1 LOCAL HOST
+
+GET http://localhost:3000/todos/?status=TO%20DO
+
+GET http://localhost:3000/todos/?priority=HIGH
+
+GET http://localhost:3000/todos/?priority=HIGH&status=IN%20PROGRESS
+
+GET http://localhost:3000/todos/?search_q=Buy
+
+GET http://localhost:3000/todos/?category=WORK&status=DONE
+
+GET http://localhost:3000/todos/?category=HOME
+
+GET http://localhost:3000/todos/?category=LEARNING&priority=HIGH
+
+
+
+
+
+### API - 2 LOCAL HOST
+
+GET http://localhost:3000/todos/1/
+
+
+
+
+## API -3
+
+GET http://localhost:3000/agenda/?date=2021-12-12
+
+
+
+
+## API - 4
+
+POST http://localhost:3000/todos/
+Content-Type : Application/json
+
+{
+  "id": 7,
+  "todo": "Learn Express Js ",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "LEARNING",
+  "dueDate": "2021-05-28"
+}
+
+
+
+### API - 5
+
+PUT http://localhost:3000/todos/6/
+Content-Type : Application/json 
+
+{
+  "status": "DONE"
+}
+
+PUT http://localhost:3000/todos/2/
+Content-Type : Application/json 
+
+{
+  "priority": "HIGH"
+}
+
+
+PUT http://localhost:3000/todos/1/
+Content-Type : Application/json
+
+{
+  "todo": "Clean the garden"
+}
+
+PUT http://localhost:3000/todos/3/
+Content-Type : Application/json
+
+{
+  "category": "LEARNING"
+}
+
+PUT http://localhost:3000/todos/5/
+Content-Type : Application/json
+
+{
+  "dueDate": "2021-12-12"
+}
+
+### API - 6
+
+DELETE http://localhost:3000/todos/6/
+
+
+GET http://localhost:3000/todos/
